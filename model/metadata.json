@@ -1,0 +1,289 @@
+{
+  "dataset_name": "Breast Cancer Wisconsin (Diagnostic)",
+  "dataset_source": "UCI Machine Learning Repository, accessed through scikit-learn",
+  "target_column": "target",
+  "feature_names": [
+    "mean radius",
+    "mean texture",
+    "mean perimeter",
+    "mean area",
+    "mean smoothness",
+    "mean compactness",
+    "mean concavity",
+    "mean concave points",
+    "mean symmetry",
+    "mean fractal dimension",
+    "radius error",
+    "texture error",
+    "perimeter error",
+    "area error",
+    "smoothness error",
+    "compactness error",
+    "concavity error",
+    "concave points error",
+    "symmetry error",
+    "fractal dimension error",
+    "worst radius",
+    "worst texture",
+    "worst perimeter",
+    "worst area",
+    "worst smoothness",
+    "worst compactness",
+    "worst concavity",
+    "worst concave points",
+    "worst symmetry",
+    "worst fractal dimension"
+  ],
+  "class_names": [
+    "malignant",
+    "benign"
+  ],
+  "class_labels": [
+    0,
+    1
+  ],
+  "n_features": 30,
+  "n_samples": 569,
+  "random_state": 42,
+  "train_rows": 455,
+  "test_rows": 114,
+  "model_files": {
+    "Logistic Regression": "logistic_regression.joblib",
+    "Decision Tree": "decision_tree.joblib",
+    "KNN": "knn.joblib",
+    "Naive Bayes": "naive_bayes.joblib",
+    "Random Forest": "random_forest.joblib"
+  },
+  "metrics": {
+    "Logistic Regression": {
+      "Accuracy": 0.9824561403508771,
+      "AUC": 0.9957010582010581,
+      "Precision": 0.9861111111111112,
+      "Recall": 0.9861111111111112,
+      "F1": 0.9861111111111112,
+      "MCC": 0.9623015873015873
+    },
+    "Decision Tree": {
+      "Accuracy": 0.9122807017543859,
+      "AUC": 0.9156746031746031,
+      "Precision": 0.9558823529411765,
+      "Recall": 0.9027777777777778,
+      "F1": 0.9285714285714286,
+      "MCC": 0.8174119974927639
+    },
+    "KNN": {
+      "Accuracy": 0.956140350877193,
+      "AUC": 0.9788359788359788,
+      "Precision": 0.958904109589041,
+      "Recall": 0.9722222222222222,
+      "F1": 0.9655172413793104,
+      "MCC": 0.9054466190452621
+    },
+    "Naive Bayes": {
+      "Accuracy": 0.9385964912280702,
+      "AUC": 0.9877645502645502,
+      "Precision": 0.9452054794520548,
+      "Recall": 0.9583333333333334,
+      "F1": 0.9517241379310345,
+      "MCC": 0.8675534786006366
+    },
+    "Random Forest": {
+      "Accuracy": 0.956140350877193,
+      "AUC": 0.9930555555555556,
+      "Precision": 0.958904109589041,
+      "Recall": 0.9722222222222222,
+      "F1": 0.9655172413793104,
+      "MCC": 0.9054466190452621
+    }
+  },
+  "classification_reports": {
+    "Logistic Regression": {
+      "malignant": {
+        "precision": 0.9761904761904762,
+        "recall": 0.9761904761904762,
+        "f1-score": 0.9761904761904762,
+        "support": 42.0
+      },
+      "benign": {
+        "precision": 0.9861111111111112,
+        "recall": 0.9861111111111112,
+        "f1-score": 0.9861111111111112,
+        "support": 72.0
+      },
+      "accuracy": 0.9824561403508771,
+      "macro avg": {
+        "precision": 0.9811507936507937,
+        "recall": 0.9811507936507937,
+        "f1-score": 0.9811507936507937,
+        "support": 114.0
+      },
+      "weighted avg": {
+        "precision": 0.9824561403508771,
+        "recall": 0.9824561403508771,
+        "f1-score": 0.9824561403508771,
+        "support": 114.0
+      }
+    },
+    "Decision Tree": {
+      "malignant": {
+        "precision": 0.8478260869565217,
+        "recall": 0.9285714285714286,
+        "f1-score": 0.8863636363636364,
+        "support": 42.0
+      },
+      "benign": {
+        "precision": 0.9558823529411765,
+        "recall": 0.9027777777777778,
+        "f1-score": 0.9285714285714286,
+        "support": 72.0
+      },
+      "accuracy": 0.9122807017543859,
+      "macro avg": {
+        "precision": 0.9018542199488491,
+        "recall": 0.9156746031746033,
+        "f1-score": 0.9074675324675325,
+        "support": 114.0
+      },
+      "weighted avg": {
+        "precision": 0.9160721496836722,
+        "recall": 0.9122807017543859,
+        "f1-score": 0.9130211893369787,
+        "support": 114.0
+      }
+    },
+    "KNN": {
+      "malignant": {
+        "precision": 0.9512195121951219,
+        "recall": 0.9285714285714286,
+        "f1-score": 0.9397590361445783,
+        "support": 42.0
+      },
+      "benign": {
+        "precision": 0.958904109589041,
+        "recall": 0.9722222222222222,
+        "f1-score": 0.9655172413793104,
+        "support": 72.0
+      },
+      "accuracy": 0.956140350877193,
+      "macro avg": {
+        "precision": 0.9550618108920814,
+        "recall": 0.9503968253968254,
+        "f1-score": 0.9526381387619444,
+        "support": 114.0
+      },
+      "weighted avg": {
+        "precision": 0.9560729421281235,
+        "recall": 0.956140350877193,
+        "f1-score": 0.9560273762928302,
+        "support": 114.0
+      }
+    },
+    "Naive Bayes": {
+      "malignant": {
+        "precision": 0.926829268292683,
+        "recall": 0.9047619047619048,
+        "f1-score": 0.9156626506024096,
+        "support": 42.0
+      },
+      "benign": {
+        "precision": 0.9452054794520548,
+        "recall": 0.9583333333333334,
+        "f1-score": 0.9517241379310345,
+        "support": 72.0
+      },
+      "accuracy": 0.9385964912280702,
+      "macro avg": {
+        "precision": 0.9360173738723689,
+        "recall": 0.9315476190476191,
+        "f1-score": 0.933693394266722,
+        "support": 114.0
+      },
+      "weighted avg": {
+        "precision": 0.9384352963933389,
+        "recall": 0.9385964912280702,
+        "f1-score": 0.9384383268099622,
+        "support": 114.0
+      }
+    },
+    "Random Forest": {
+      "malignant": {
+        "precision": 0.9512195121951219,
+        "recall": 0.9285714285714286,
+        "f1-score": 0.9397590361445783,
+        "support": 42.0
+      },
+      "benign": {
+        "precision": 0.958904109589041,
+        "recall": 0.9722222222222222,
+        "f1-score": 0.9655172413793104,
+        "support": 72.0
+      },
+      "accuracy": 0.956140350877193,
+      "macro avg": {
+        "precision": 0.9550618108920814,
+        "recall": 0.9503968253968254,
+        "f1-score": 0.9526381387619444,
+        "support": 114.0
+      },
+      "weighted avg": {
+        "precision": 0.9560729421281235,
+        "recall": 0.956140350877193,
+        "f1-score": 0.9560273762928302,
+        "support": 114.0
+      }
+    }
+  },
+  "confusion_matrices": {
+    "Logistic Regression": [
+      [
+        41,
+        1
+      ],
+      [
+        1,
+        71
+      ]
+    ],
+    "Decision Tree": [
+      [
+        39,
+        3
+      ],
+      [
+        7,
+        65
+      ]
+    ],
+    "KNN": [
+      [
+        39,
+        3
+      ],
+      [
+        2,
+        70
+      ]
+    ],
+    "Naive Bayes": [
+      [
+        38,
+        4
+      ],
+      [
+        3,
+        69
+      ]
+    ],
+    "Random Forest": [
+      [
+        39,
+        3
+      ],
+      [
+        2,
+        70
+      ]
+    ]
+  },
+  "test_data_file": "test_data.csv"
+}
